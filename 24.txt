@@ -1,0 +1,25 @@
+## note: expressions with redundant parentheses are included, see [1] and [2]
+##
+## we do not remove redundant ones---but restrict solutions to a minimal
+## number of parens, see enumeration in source)
+
+## reordering commutative operations, since it may constitute a different
+## ordering of numbers, qualifies as a different solution, see [1] and [3]
+
+## note: 4 ^ ( 3 / 2 ) == 4 ^ 1.5 == 8
+
+24 = ( ( 3 ^ 2 ) - 3 ) * 4         [1]
+24 = ( ( 4 - 2 ) ^ 3 ) * 3
+24 = ( ( 4 / 2 ) ^ 3 ) * 3
+24 = ( 3 ^ 2 - 3 ) * 4             [2]
+24 = ( 4 - 2 ) ^ 3 * 3
+24 = ( 4 / 2 ) ^ 3 * 3
+24 = ( 4 ^ ( 3 / 2 ) ) * 3
+24 = 3 * ( ( 4 - 2 ) ^ 3 )
+24 = 3 * ( ( 4 / 2 ) ^ 3 )
+24 = 3 * ( 4 ^ ( 3 / 2 ) )
+24 = 3 * 4 ^ ( 3 / 2 )
+24 = 3 / ( ( 2 / 4 ) ^ 3 )
+24 = 4 * ( ( 3 ^ 2 ) - 3 )         [3]
+24 = 4 * ( 3 ^ 2 - 3 )
+

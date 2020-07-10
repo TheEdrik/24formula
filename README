@@ -1,0 +1,7 @@
+Enumerate formulas adding up to 24
+
+- all possible parenthesis-pair combinations
+- all possible 3x operations
+- all valid combinations of 2, 3, 3, 4
+- filter valid formulas which evaluate (as string) to 24
+
