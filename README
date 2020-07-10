@@ -4,5 +4,8 @@ Enumerate formulas adding up to 24
 - all possible 3x operations
 - all valid combinations of 2, 3, 3, 4
 - filter valid formulas which evaluate (as string) to 24
+
 - solutions in '24.txt' (with some clarifications)
+- solver is 24search.py
+- all evaluated formulas in 24all.log
 
