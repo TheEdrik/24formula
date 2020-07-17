@@ -20,6 +20,7 @@ import itertools, re
 ##      (A .  B . C) . D    p =      256                  +8
 ##     ((A .  B). C) . D    p = 512 +256          +32     +8
 ##      (A . (B . C)). D    p =      256      +64         +8 +4
+##       A . (B . C) . D    p =               +64         +8
 ##       A .  B .(C  . D)   p =                        16       +2
 ##       A . (B . C  . D)   p =                64               +2
 ##       A . (B .(C  . D))  p =                64     +16       +2 +1
@@ -44,8 +45,9 @@ def total24():
 	nrs = set(itertools.permutations('2334', 4))
 					## permutation does not deduplicate 3's
 	ops = list(itertools.product(OPS, OPS, OPS))
-	prs = (256 +32, 256 +8, 512 +256 +32 +8, 256 +64 +8 +4, 16 +2, 64 +2,
-	       64 +16 +2 +1, 128 +64 +8 +2, 256 +32 +16 +2)
+	prs = (256 +32, 256 +8, 512 +256 +32 +8, 256 +64 +8 +4,
+	       64 +8, 16 +2, 64 +2, 64 +16 +2 +1, 128 +64 +8 +2,
+	       256 +32 +16 +2)
 
 	for n, o, p in itertools.product(nrs, ops, prs):
 		if (o[0] +o[1] +o[2] == '^^^'):
