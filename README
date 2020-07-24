@@ -9,3 +9,8 @@ Enumerate formulas adding up to 24
 - solver is 24search.py
 - all evaluated formulas in 24all.log
 
+Riddler Township election (2020-07-24)
+
+- main program: elect.py
+- log with sorted results: elect.log
+
